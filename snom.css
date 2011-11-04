@@ -1,0 +1,23 @@
+body {
+	width: 400px;
+}
+
+#container {
+	background: #ccc;
+	padding: 3px;
+	padding-bottom: 20px;
+	height: 400px;
+	width: 100%;
+	font-color: #fff;
+}
+#container h1 {
+	color: #fff;
+}
+#content {
+	margin: 3px;
+	overflow-y: scroll;
+	background: #A2C8E8;
+	height: 250px;
+	width: 95%;
+	padding: 5px;
+}
