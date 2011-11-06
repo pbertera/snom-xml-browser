@@ -1,0 +1,12 @@
+Currently support for this tags:
+
+* SnomIPPhoneText
+* SnomIPPhoneImageFile
+* MenuItem
+* SoftKeyItem (with Name and Label tags)
+* SnomIPPhoneInput
+* SnomIPPhoneImageFile
+
+Todo:
+
+* support for `fetch` tag
