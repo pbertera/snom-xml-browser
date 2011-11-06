@@ -79,6 +79,24 @@
 </html>
  </xsl:template>
 
+<xsl:template match="SnomIPPhoneImageFile">
+<xsl:param name="src" select="URL"/>
+<html>
+<head>  
+<link href="snom.css" rel="stylesheet" type="text/css" />
+<title></title></head>
+<body><div id="container">
+        <h1><xsl:value-of select="Title"/></h1>
+        <div id="content">
+        <img src="{$src}"/>
+        </div>
+ <hr /> 
+ <xsl:apply-templates select="SoftKeyItem" />
+ <a href="javascript:history.go(-1)">Go Back</a> 
+</div></body>
+</html>
+ </xsl:template>
+
  <xsl:template match="DirectoryEntry">
 	<li><b><xsl:value-of select="Name"/>:</b><xsl:value-of select="Telephone"/></li>
  </xsl:template>
