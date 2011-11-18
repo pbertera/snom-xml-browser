@@ -70,7 +70,7 @@
 <body><div id="container">
 	<h1><xsl:value-of select="Title"/></h1>
  	<div id="content">
-	<xsl:value-of select="Text"/>
+	<xsl:copy-of select="Text"/>
 	</div>
  <hr /> 
  <xsl:apply-templates select="SoftKeyItem" />
@@ -110,5 +110,7 @@
   <xsl:variable name="uri" as="xs:string" select="php:functionString('makeUrl', URL)" />
   <a href="{$uri}"><xsl:value-of select="Name"/> (<xsl:value-of select="Label"/>)</a><br/>
  </xsl:template>
+ 
 </xsl:stylesheet>
+
 
